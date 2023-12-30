@@ -1,4 +1,4 @@
-# CS50 Final Porject: LIBRARY WEB APPLICATION
+# CS50 Final Project: LIBRARY WEB APPLICATION
 
 #### Video Demo: [link](https://youtu.be/-hRL951KxGo)
 
