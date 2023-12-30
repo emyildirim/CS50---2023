@@ -46,6 +46,20 @@ This project is a Node.js web application that enables users to borrow books fro
 2. View all public user accounts and the number of books borrowed by each user.
 
 
+## Endpoints
+
+*The application’s user interface consist of the following pages. The page displayed when
+the user visits the specified endpoint*
+
+
+| Page | Endpoint | Description | Accessibility
+|--|--|--|--|
+| Home | / | Displays all the books in the library | Visible to everyone |
+| Login | /login | Displays login form| Visible to everyone |
+| History | /history | Displays the books that previously and currently borrowed | Only visible to users |
+| Admin Panel | /admin/users | Displays registered users and the number of books borrowed for each | Only visible to admins |
+
+
 > [!IMPORTANT]
 > You will need to prepopulate your database according to the given information about the collections down below.
 
@@ -142,16 +156,3 @@ This project is a Node.js web application that enables users to borrow books fro
 > [!IMPORTANT]
 > The password is always the user’s *library card num + the first letter* of their name.
 
-
-## Endpoints
-
-*The application’s user interface consist of the following pages. The page displayed when
-the user visits the specified endpoint*
-
-
-| Page | Endpoint | Description | Accessibility
-|--|--|--|--|
-| Home | / | Displays all the books in the library | Visible to everyone |
-| Login | /login | Displays login form| Visible to everyone |
-| History | /history | Displays the books that previously and currently borrowed | Only visible to users |
-| Admin Panel | /admin/users | Displays registered users and the number of books borrowed for each | Only visible to admins |
