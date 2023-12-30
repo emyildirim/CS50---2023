@@ -108,6 +108,9 @@ the user visits the specified endpoint*
 + Date returned. (date)
 
 
+> [!IMPORTANT]
+> The password is always the user’s *library card num + the first letter* of their name.
+
 
 ## Example collections used in the video ([link](https://youtu.be/-hRL951KxGo))
 
@@ -152,7 +155,3 @@ the user visits the specified endpoint*
 ]
 
 ```
-
-> [!IMPORTANT]
-> The password is always the user’s *library card num + the first letter* of their name.
-
