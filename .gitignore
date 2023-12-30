@@ -4,5 +4,5 @@
 # folders
 node_modules/
 
-# other
-.png
+# ignore files with the .png extension
+*.png
