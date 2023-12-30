@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <%- include("navigation", {userData: userData}) %>
+    <h1>Login Form</h1>
+    <section>
+        <form action="/login" method="POST">
+            <label>Username:</label>
+            <input type="text" name="libCard" />
+            <label>Password:</label>
+            <input type="password" name="password" />
+            <button>Login</button>
+        </form>
+    </section>
+
+</body>
+</html>

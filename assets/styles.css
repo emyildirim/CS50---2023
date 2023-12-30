@@ -1,0 +1,127 @@
+
+/* main tag styles */
+body {
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(211, 211, 211);
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+nav {
+    background-color: goldenrod;
+    border: 2px solid rgb(104, 104, 104);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+hr {
+    height: 3px;
+    background-color: goldenrod;
+}
+
+img {
+    width: 210px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* form style */
+input,
+select {
+    display: block;
+    margin: 12px 0px;
+    font-size: 18px;
+    padding: 4px 6px;
+}
+
+
+/* container style */
+div:not(#container) {
+    box-shadow: 2px 2px 2px rgb(216, 160, 18);
+    border-radius: 4%;
+    width: 300px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+div:not(#container):hover {
+    box-shadow: 5px 3px 2px rgb(216, 160, 18);
+    border-radius: 4%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* button style */
+button {
+    margin-bottom: 6px;
+    padding: 10px 22px;
+   
+}
+
+#reset{
+    margin-top: 8px;
+}
+
+
+/* table style */
+table, th, td{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 18px;
+    margin: auto;
+}
+
+ th, td{
+    color: rgb(106, 86, 192);
+    text-align: center;
+ }
+
+ th{
+   text-shadow: 1px 1px 1px black;
+ }
+
+ table{
+    padding: 0
+ }
+
+
+ /* other styles */
+
+ .error {
+     color: red;
+     text-decoration: underline;
+ }
+
+ .info{
+    color: green;
+    text-decoration: underline;
+ }
+
+ .default{
+    color:rgb(102, 68, 255);
+    text-decoration: underline;
+ }

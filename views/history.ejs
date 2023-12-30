@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css">
+    <title>History</title>
+  </head>
+  <body>
+    <%- include("navigation.ejs", {userData: userData}) %>
+    <section>
+      <h1>Book History</h1>
+      <!-- Displays all the books borrowed -->
+      <% if (bookList.length  === 0) { %>
+        <p class="default">Nothing To Show You</p>
+      <% } else { %>
+        <p class="default">NOTE: to reset your History, all the books should be returned!</p>
+        
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Borrow Date</th>
+            <th>Return Date</th>
+          </tr>
+        
+          <% for(const currBook of bookList) {%>
+        
+            <tr>
+              <td>
+                <%=currBook.title %>
+              </td>
+              <td>
+                <%=currBook.author %>
+              </td>
+              <td>
+                <%=currBook.dateBorrow.toString().slice(0, currBook.dateBorrow.toString().indexOf('GMT') - 4) %>
+              </td>
+        
+              <td>
+                <% if (currBook.dateReturn === null) {%>
+                  <form action="/return/<%=currBook.bookId%>" method="POST">
+                    <button>Return</button>
+                  </form>
+                <% } else {%>
+                  <%=currBook.dateReturn.toString().slice(0, currBook.dateReturn.toString().indexOf('GMT') - 4) %>
+                <% } %>
+              </td>
+            </tr>
+        
+          <% } %>
+        </table>
+        
+        <form action="history/reset" , method="POST">
+          <button id="reset" >Reset History</button>
+        </form>
+      <% } %>
+    </section>
+    
+  </body>
+</html>

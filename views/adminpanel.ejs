@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css">
+    <title>History</title>
+  </head>
+  <body>
+    <%- include("navigation.ejs", {userData: userData}) %>
+    <h1>Users In Database</h1>
+      <!-- Displays all the users on database -->
+        <table>
+        
+          <tr>
+            <th>Library Card Num</th>
+            <th>Full Name</th>
+            <th>Authority</th>
+            <th>Num of Borrowed Books</th>
+          </tr>
+        
+          <% for(const currUser of userList) {%>
+        
+            <tr>
+                <td>
+                    <%=currUser.libCardNum %>
+                </td>
+                <td>
+                    <%=currUser.name %>
+                </td>
+            
+                <td>
+                    <% if (currUser.isAdmin === true) {%>
+                        Admin
+                    <% } else {%>
+                        User
+                    <% } %>
+                </td>
+            
+                <td>
+                    <% if (currUser.numOfBooks !== undefined) {%>
+                        <%=currUser.numOfBooks %>
+                    <% } else {%>
+                        0
+                    <% } %>
+                </td>
+            </tr>
+
+          <% } %>
+        </table>
+  </body>
+</html>

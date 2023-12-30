@@ -1,0 +1,12 @@
+<nav>
+    <a href="/">Home</a> |
+    <% if (userData !== "") {%>
+        <a href="/history">History</a> |
+        <% if (userData.isAdmin === true) { %>
+            <a href="/admin/users">Admin</a> |
+        <% } %>
+        <a href="/logout">Logout</a>
+    <% } else { %>
+        <a href="/login">Login</a>
+    <% } %>
+</nav>
