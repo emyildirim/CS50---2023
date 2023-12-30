@@ -49,32 +49,6 @@ const Book = mongoose.model("books", BooksSchema)
 const User = mongoose.model("users", UsersSchema)
 const History = mongoose.model("history", HistorySchema)
 
-///////////////////
-// COLLECTIONS IN THE MONGODB Database
-//////////////////
-
-// BOOKS
-/*
-  [
-    { "title": "Harry Potter and the Chamber of Secrets", "author": "J. K. Rowling", "imageOfBook": "http://bit.ly/47O2Q1i", "borrowedBy": "" },
-    { "title": "Nineteen Eighty-Four", "author": "George Orwell", "imageOfBook": "https://bit.ly/46t6psH", "borrowedBy": "" },
-    { "title": "Dracula", "author": "Bram Stoker", "imageOfBook": "https://bit.ly/3GjWafz", "borrowedBy": "" },
-    { "title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "imageOfBook": "https://bit.ly/3Rc9gSl", "borrowedBy": "" },
-    { "title": "The Handmaid's Tale", "author": "Margaret Atwood", "imageOfBook": "https://bit.ly/47Iug8U", "borrowedBy": "" },
-    { "title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "imageOfBook": "https://bit.ly/3Rc9gSl", "borrowedBy": "" },
-  ]
-*/
-
-//TODO: change the user names
-
-// USERS
-/*
-  [
-    { "name": "Abbie Lee", "libCardNum": "0001", "isAdmin": false },
-    { "name": "David Aziz", "libCardNum": "0002", "isAdmin": false },
-    { "name": "Michael Shark", "libCardNum": "0000", "isAdmin": true }
-  ]
-*/
 
 // ----------------------------------------------
 // Endpoints
