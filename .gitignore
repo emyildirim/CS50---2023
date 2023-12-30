@@ -1,8 +1,0 @@
-# environment-specific files
-.env
-
-# folders
-node_modules/
-
-# ignore files with the .png extension
-*.png
